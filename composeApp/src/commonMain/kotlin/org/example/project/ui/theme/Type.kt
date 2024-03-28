@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.matkovivan.nav_cupcake.ui.theme
+package org.example.project.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
