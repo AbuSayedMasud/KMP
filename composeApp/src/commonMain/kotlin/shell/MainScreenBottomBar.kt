@@ -96,12 +96,14 @@ fun RowScope.AddItem(
         modifier = if (selected) {
             Modifier
         } else {
-            Modifier.clickable { navController.navigate(screen.route) }
+            Modifier.clickable { screen.route?.let { navController.navigate(it) } }
         },
         onClick = {
-            navController.navigate(screen.route) {
-                popUpTo(navController.graph.findStartDestination().route.toString())
-                launchSingleTop = true
+            screen?.route?.let {
+                navController.navigate(it) {
+                    popUpTo(navController.graph.findStartDestination().route.toString())
+                    launchSingleTop = true
+                }
             }
         },
         unselectedContentColor = if (isDarkTheme) Color.White.copy(alpha = ContentAlpha.disabled) else Color.Black.copy(alpha = ContentAlpha.disabled),

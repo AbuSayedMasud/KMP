@@ -22,6 +22,26 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 
 import androidx.compose.runtime.Composable
+import org.example.project.ui.theme.md_theme_dark_background
+import org.example.project.ui.theme.md_theme_dark_error
+import org.example.project.ui.theme.md_theme_dark_onBackground
+import org.example.project.ui.theme.md_theme_dark_onError
+import org.example.project.ui.theme.md_theme_dark_onPrimary
+import org.example.project.ui.theme.md_theme_dark_onSecondary
+import org.example.project.ui.theme.md_theme_dark_onSurface
+import org.example.project.ui.theme.md_theme_dark_primary
+import org.example.project.ui.theme.md_theme_dark_secondary
+import org.example.project.ui.theme.md_theme_dark_surface
+import org.example.project.ui.theme.md_theme_light_background
+import org.example.project.ui.theme.md_theme_light_error
+import org.example.project.ui.theme.md_theme_light_onBackground
+import org.example.project.ui.theme.md_theme_light_onError
+import org.example.project.ui.theme.md_theme_light_onPrimary
+import org.example.project.ui.theme.md_theme_light_onSecondary
+import org.example.project.ui.theme.md_theme_light_onSurface
+import org.example.project.ui.theme.md_theme_light_primary
+import org.example.project.ui.theme.md_theme_light_secondary
+import org.example.project.ui.theme.md_theme_light_surface
 
 private val LightColors = lightColors(
     primary = md_theme_light_primary,

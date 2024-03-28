@@ -24,8 +24,7 @@ fun BottomNavGraph(navController: NavHostController) {
     }
     val showNotificationIcon = remember { mutableStateOf(false) }
     val colorSelectionViewModel = ColorSelectionViewModel()
-    val currentRoute =
-        remember { mutableStateOf(navController.currentBackStackEntry?.destination?.route) }
+    val currentRoute = remember { mutableStateOf(navController.currentBackStackEntry?.destination?.route) }
 
     NavHost(navController = navController, startDestination = BottomBar.Home.route) {
         composable(BottomBar.Home.route) {
@@ -63,14 +62,5 @@ fun BottomNavGraph(navController: NavHostController) {
                 navController = navController,
             )
         }
-//        composable("transaction") {
-//            TransactionScreen(colorSelectionViewModel, navController)
-//        }
-//        composable("search") {
-//            SearchScreen()
-//        }
-//        composable("settings") {
-//            SettingsScreen()
-//        }
     }
 }
