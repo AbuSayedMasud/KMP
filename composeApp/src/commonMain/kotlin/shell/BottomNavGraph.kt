@@ -26,12 +26,12 @@ fun BottomNavGraph(navController: NavHostController) {
     val colorSelectionViewModel = ColorSelectionViewModel()
     val currentRoute = remember { mutableStateOf(navController.currentBackStackEntry?.destination?.route) }
 
-    NavHost(navController = navController, startDestination = BottomBar.Home.route) {
-        composable(BottomBar.Home.route) {
-            HomeScreen(
-                navController = navController,
-            )
-        }
+    NavHost(navController = navController, startDestination = BottomBar.Market.route) {
+//        composable(BottomBar.Home.route) {
+//            HomeScreen(
+//                navController = navController,
+//            )
+//        }
         composable(BottomBar.Market.route) {
             MarketScreen(
                 navController = navController,

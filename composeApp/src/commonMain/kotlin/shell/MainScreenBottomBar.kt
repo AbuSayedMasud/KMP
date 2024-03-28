@@ -43,7 +43,6 @@ fun MainScreenBottomBar(colorSelectionViewModel: ColorSelectionViewModel) {
 @Composable
 fun bottomBar(navController: NavHostController) {
     val screens = listOf(
-        BottomBar.Home,
         BottomBar.Market,
         BottomBar.Trade,
         BottomBar.Service,
